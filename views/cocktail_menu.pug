@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    h1="Cocktail Menu"
+    form(action="/", method="post") 
+        div.form-group
+            label(for="tequila_sunrise") Tequila Sunrise - $5
+            input(type="radio", name="drink", value="tequila_sunrise")
+    
+        div.form-group
+            label(for="mojito") Mojito - $6
+            input(type="radio", name="drink", value="mojito")
+    
+        div.form-group
+            label(for="black_russian") Black Russian - $4 
+            input(type="radio", name="drink", value="black_russian")
+
+        button(type="submit") Order

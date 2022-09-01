@@ -1,9 +1,9 @@
 var express = require('express');
 var router = express.Router();
 
-/* GET users listing. */
+/* GET thank you message */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+    res.render('thank_you');
 });
 
 module.exports = router;

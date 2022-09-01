@@ -4,8 +4,9 @@ var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+var cocktail_menu_router = require('./routes/cocktail_menu');
+var thank_you_router = require('./routes/thank_you');
+// var usersRouter = require('./routes/users');
 
 var app = express();
 
@@ -19,8 +20,13 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/users', usersRouter);
+app.use('/', cocktail_menu_router);
+app.use('/thank_you', thank_you_router)
+
+// app.post('/', (req, res) => {
+//     console.log('Got body:', req.body);
+//     res.sendStatus(200);
+// });
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

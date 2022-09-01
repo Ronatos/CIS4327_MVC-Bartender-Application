@@ -1,5 +1,15 @@
 # CIS4327_MVC-Bartender-Application
 
+## Usage
+
+1. Run ```npm install``` to generate your package-lock.json
+2. Run ```npm start``` to launch the app at localhost:3000
+3. Select a drink on the menu and then press the Order button.
+4. A log should appear in the server console, handling your POST request.
+5. The bartender who also happens to be a backend developer will read the log and make the drink.
+
+## Project Instructions
+
 The  context  for  this  assignment  is  bar  patrons  ordering  a  cocktail  via  an  online  application,  and a bartender  preparing  cocktails  based  on  the  order  queue.  In  this  application,  bar  patrons  (customer users)  can  perform  actions  such  as  view the cocktail  menu,  and  place  an  order  for  a  cocktail  drink. Bartender (staff user) should be able to view the cocktail order queue and set them for pick up by server after it is prepared.
 
 To implement this online bartender application using the MVC pattern, you will need a controller to 
